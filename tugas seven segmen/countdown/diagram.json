@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "author": "Maulana Fadludz Dzikri",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -12.6, "left": 348.4, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": 52.98,
+      "left": 494.68,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 14.4,
+      "left": 489.05,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 157,
+      "left": 488.75,
+      "rotate": 270,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "uno:11", "bb1:14t.b", "#8f4814", [ "v-76.2", "h355.2", "v115.2" ] ],
+    [ "bb1:tn.19", "bb1:bp.19", "black", [ "v0" ] ],
+    [ "r2:1", "bb1:bp.16", "black", [ "h0" ] ],
+    [ "r1:1", "bb1:tn.16", "black", [ "h0" ] ],
+    [ "r1:2", "bb1:16t.b", "", [ "$bb" ] ],
+    [ "r2:2", "bb1:16b.i", "", [ "$bb" ] ],
+    [ "uno:10", "bb1:15t.b", "orange", [ "v-66.6", "h355.3" ] ],
+    [ "uno:9", "bb1:17t.b", "gold", [ "v-57", "h365" ] ],
+    [ "uno:8", "bb1:18t.b", "blue", [ "v-47.4", "h364.6" ] ],
+    [ "uno:5", "bb1:14b.i", "violet", [ "v-18.6", "h70.4", "v259.2", "h220.8", "v-9.6" ] ],
+    [ "uno:4", "bb1:15b.i", "white", [ "v-28.2", "h70.5", "v278.4", "h220.8" ] ],
+    [ "uno:3", "bb1:17b.i", "green", [ "v-37.8", "h80.2", "v259.2", "h220.8" ] ],
+    [ "uno:2", "bb1:18b.i", "magenta", [ "v-9", "h89.9", "v220.8", "h220.8" ] ],
+    [ "uno:GND.2", "bb1:bp.11", "black", [ "v19.7", "h320.1" ] ],
+    [ "sevseg1:COM.1", "bb1:16b.h", "", [ "$bb" ] ],
+    [ "sevseg1:COM.2", "bb1:16t.c", "", [ "$bb" ] ],
+    [ "sevseg1:A", "bb1:17t.c", "", [ "$bb" ] ],
+    [ "sevseg1:B", "bb1:18t.c", "", [ "$bb" ] ],
+    [ "sevseg1:C", "bb1:17b.h", "", [ "$bb" ] ],
+    [ "sevseg1:D", "bb1:15b.h", "", [ "$bb" ] ],
+    [ "sevseg1:E", "bb1:14b.h", "", [ "$bb" ] ],
+    [ "sevseg1:F", "bb1:15t.c", "", [ "$bb" ] ],
+    [ "sevseg1:G", "bb1:14t.c", "", [ "$bb" ] ],
+    [ "sevseg1:DP", "bb1:18b.h", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}

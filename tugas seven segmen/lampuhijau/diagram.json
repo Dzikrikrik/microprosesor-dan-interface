@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "author": "Maulana Fadludz Dzikri",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -3, "left": 338.8, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": 63.42,
+      "left": 451.76,
+      "attrs": { "digits": "2", "color": "#d040d0", "colon": "", "common": "cathode" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -195.6,
+      "left": 224.6,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -195.6,
+      "left": 263,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -195.6,
+      "left": 301.4,
+      "attrs": { "color": "limegreen" }
+    }
+  ],
+  "connections": [
+    [ "uno:GND.1", "led3:C", "black", [ "v-143.4", "h201.3" ] ],
+    [ "uno:GND.1", "led2:C", "black", [ "v-153", "h162.9" ] ],
+    [ "uno:GND.1", "led1:C", "black", [ "v-133.8", "h124.5" ] ],
+    [ "uno:11", "led3:A", "green", [ "v-124.2", "h182.4" ] ],
+    [ "uno:12", "led2:A", "gold", [ "v-114.6", "h163.1" ] ],
+    [ "uno:13", "led1:A", "red", [ "v-105", "h124.6", "v-57.6" ] ],
+    [ "bb1:15t.b", "uno:0", "purple", [ "v-144", "h-249.6" ] ],
+    [ "bb1:16t.b", "uno:1", "magenta", [ "v-134.4", "h-268.8" ] ],
+    [ "bb1:13t.b", "uno:3", "purple", [ "v-124.8", "h-249.6" ] ],
+    [ "bb1:14t.b", "uno:4", "magenta", [ "v-115.2", "h-268.8" ] ],
+    [ "sevseg1:DIG1", "bb1:15t.c", "", [ "$bb" ] ],
+    [ "sevseg1:DIG2", "bb1:16t.c", "", [ "$bb" ] ],
+    [ "sevseg1:A", "bb1:13t.c", "", [ "$bb" ] ],
+    [ "sevseg1:B", "bb1:14t.c", "", [ "$bb" ] ],
+    [ "sevseg1:C", "bb1:13b.h", "", [ "$bb" ] ],
+    [ "sevseg1:D", "bb1:16b.h", "", [ "$bb" ] ],
+    [ "sevseg1:E", "bb1:15b.h", "", [ "$bb" ] ],
+    [ "sevseg1:F", "bb1:17t.c", "", [ "$bb" ] ],
+    [ "sevseg1:G", "bb1:17b.h", "", [ "$bb" ] ],
+    [ "sevseg1:DP", "bb1:14b.h", "", [ "$bb" ] ],
+    [ "bb1:13b.j", "uno:5", "orange", [ "v57.6", "h-144", "v-259.2", "h-134.4" ] ],
+    [ "bb1:16b.j", "uno:6", "yellow", [ "v67.2", "h-182.4", "v-259.2", "h-124.8" ] ],
+    [ "bb1:15b.j", "uno:7", "orange", [ "v76.8", "h-182.4", "v-259.2", "h-134.4" ] ],
+    [ "uno:8", "bb1:17t.b", "purple", [ "v-85.8", "h364.6" ] ],
+    [ "bb1:17b.j", "uno:9", "orange", [ "v86.4", "h-211.2", "v-259.2", "h-144" ] ]
+  ],
+  "dependencies": {}
+}
