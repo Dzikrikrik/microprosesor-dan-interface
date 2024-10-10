@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="foHR8jOxlrMREkODlsy3">
+    <mxGraphModel dx="1400" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4jLFiAf4HJtYJN68ANB5-13" value="Start" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="203" y="660" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4jLFiAf4HJtYJN68ANB5-14" value="Read potentiometer value from analog pin" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="104" y="760" width="247" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="4jLFiAf4HJtYJN68ANB5-15" value="Is value &amp;lt;= 1302?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="133" y="876" width="189" height="189" as="geometry" />
+        </mxCell>
+        <mxCell id="4jLFiAf4HJtYJN68ANB5-16" value="Process the value" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1137" width="185" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="4jLFiAf4HJtYJN68ANB5-17" value="Ignore the value" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="255" y="1137" width="177" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="4jLFiAf4HJtYJN68ANB5-18" value="End" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="207" y="1236" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="4jLFiAf4HJtYJN68ANB5-19" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.49;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="4jLFiAf4HJtYJN68ANB5-13" target="4jLFiAf4HJtYJN68ANB5-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4jLFiAf4HJtYJN68ANB5-20" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="4jLFiAf4HJtYJN68ANB5-14" target="4jLFiAf4HJtYJN68ANB5-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4jLFiAf4HJtYJN68ANB5-21" value="Yes" style="curved=1;startArrow=none;endArrow=block;exitX=0.06;exitY=1;entryX=0.5;entryY=0.01;rounded=0;" edge="1" parent="1" source="4jLFiAf4HJtYJN68ANB5-15" target="4jLFiAf4HJtYJN68ANB5-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="112" y="1101" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4jLFiAf4HJtYJN68ANB5-22" value="No" style="curved=1;startArrow=none;endArrow=block;exitX=0.94;exitY=1;entryX=0.5;entryY=0.01;rounded=0;" edge="1" parent="1" source="4jLFiAf4HJtYJN68ANB5-15" target="4jLFiAf4HJtYJN68ANB5-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="343" y="1101" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4jLFiAf4HJtYJN68ANB5-23" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0;entryY=0.3;rounded=0;" edge="1" parent="1" source="4jLFiAf4HJtYJN68ANB5-16" target="4jLFiAf4HJtYJN68ANB5-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="112" y="1211" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4jLFiAf4HJtYJN68ANB5-24" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=1.01;entryY=0.3;rounded=0;" edge="1" parent="1" source="4jLFiAf4HJtYJN68ANB5-17" target="4jLFiAf4HJtYJN68ANB5-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="343" y="1211" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

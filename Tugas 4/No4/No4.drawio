@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="rdsH9jL_pMepQFWI_6G5">
+    <mxGraphModel dx="1615" dy="857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-1" value="Start" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="207" y="20" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-2" value="Read potentiometer value from analog pin" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="109" y="120" width="247" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-3" value="Is value &amp;lt;= 1302?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="138" y="236" width="189" height="189" as="geometry" />
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-4" value="Move servo motor" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="497" width="189" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-5" value="Stop servo motor" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="259" y="497" width="183" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-6" value="Process the value" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="22" y="596" width="185" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-7" value="Ignore the value" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="262" y="596" width="177" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-8" value="End" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="212" y="694" width="41" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-9" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.51;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="6BfIX5ttVH3XspMTGiZE-1" target="6BfIX5ttVH3XspMTGiZE-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-10" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="6BfIX5ttVH3XspMTGiZE-2" target="6BfIX5ttVH3XspMTGiZE-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-11" value="Yes" style="curved=1;startArrow=none;endArrow=block;exitX=0.05;exitY=1;entryX=0.5;entryY=0.01;rounded=0;" edge="1" parent="1" source="6BfIX5ttVH3XspMTGiZE-3" target="6BfIX5ttVH3XspMTGiZE-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="114" y="461" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-12" value="No" style="curved=1;startArrow=none;endArrow=block;exitX=0.95;exitY=1;entryX=0.5;entryY=0.01;rounded=0;" edge="1" parent="1" source="6BfIX5ttVH3XspMTGiZE-3" target="6BfIX5ttVH3XspMTGiZE-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="461" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-13" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="6BfIX5ttVH3XspMTGiZE-4" target="6BfIX5ttVH3XspMTGiZE-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-14" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="6BfIX5ttVH3XspMTGiZE-5" target="6BfIX5ttVH3XspMTGiZE-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-15" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=-0.01;entryY=0.31;rounded=0;" edge="1" parent="1" source="6BfIX5ttVH3XspMTGiZE-6" target="6BfIX5ttVH3XspMTGiZE-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="114" y="669" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6BfIX5ttVH3XspMTGiZE-16" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=1;entryY=0.31;rounded=0;" edge="1" parent="1" source="6BfIX5ttVH3XspMTGiZE-7" target="6BfIX5ttVH3XspMTGiZE-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="669" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
